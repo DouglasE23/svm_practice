@@ -40,7 +40,7 @@ y_pred_b = clf2.predict(X_test)
 
 # View confusion matrix
 cm2 = confusion_matrix(y_test, y_pred_b)
-print(cm)
+print(cm2)
 
 # Create and train model c
 clf3 = svm.SVC(kernel='sigmoid')
@@ -50,8 +50,8 @@ clf3.fit(X_train, y_train)
 y_pred_c = clf3.predict(X_test)
 
 # View confusion matrix
-cm = confusion_matrix(y_test, y_pred_c)
-print(cm)
+cm3 = confusion_matrix(y_test, y_pred_c)
+print(cm3)
 
 # View quality metrics
 accuracy_rbf = accuracy_score(y_test, y_pred_a)
